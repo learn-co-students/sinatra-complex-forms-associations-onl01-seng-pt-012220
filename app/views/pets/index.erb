@@ -1,1 +1,5 @@
 index.erb
+
+<% @pets.map do |pet| %>
+    <li><a href= "/pets/<%= pet.id %>"> <%= pet.name %></li>
+ <% end %>
